@@ -35,4 +35,4 @@ class Dice:
         print("")
         self.ro = random.randint(1,self.sides)
         self.rol = self.ro*self.multi
-        print(self.ro,"*",self.multi,"=",self.rol+"$")
+        print(self.ro,"*",self.multi,"=","{}$".format(self.rol))
