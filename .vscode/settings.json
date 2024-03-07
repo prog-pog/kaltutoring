@@ -1,9 +1,5 @@
 {
-    "python.testing.unittestArgs": [
-        "-v",
-        "-s",
-        "./python/diceGames",
-        "-p",
+    "python.testing.pytestArgs": [
         "main.py"
     ],
     "python.testing.pytestEnabled": true,
