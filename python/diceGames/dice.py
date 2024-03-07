@@ -17,7 +17,7 @@ def clear():
 class Dice:
     def settings(self, delay, mult):
         self.delay = delay
-        self.multi - mult
+        self.multi = mult
 
     def set(self, sides):
         self.sides = sides
