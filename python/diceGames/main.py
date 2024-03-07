@@ -1,8 +1,14 @@
 def main():
-    import random
-    import time
     import dice
+    import moneyhand as mh
 
 
-    q = dice.create(4, 1, 10, "q")
-    q.roll
+    mh.start()
+    dice.clear()
+    q = dice.Dice()
+    q.settings(10)
+    q.set(4, 2)
+    q.roll()
+
+if __name__ == "__main__":
+    main()
