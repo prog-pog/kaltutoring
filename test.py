@@ -1,2 +1,2 @@
-import main
+from pytho import main
 main.main()
