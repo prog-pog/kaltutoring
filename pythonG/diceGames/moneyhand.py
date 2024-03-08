@@ -17,7 +17,7 @@ def load():
     except FileNotFoundError:
         with open("pythonG/diceGames/save.json", "w") as file:
             file.flush()
-            data = {"delay": 50, "mult": 1, "sides": 2, "money": 0}
+            data = {"delay": 20, "mult": 1, "sides": 2, "money": 0}
             data = json.dumps(data, indent=4)
             file.write(data)
         file.close()
