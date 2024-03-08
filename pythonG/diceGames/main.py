@@ -1,14 +1,17 @@
 def main():
     import dice
     import moneyhand as mh
+    import json
 
 
-    mh.start()
+    money = 0
     dice.clear()
     q = dice.Dice()
     q.settings(10, 1)
     q.set(4)
-    q.roll()
+    rol = q.roll()
+    money = money + rol
+    mh.save(q)
 
 if __name__ == "__main__":
     main()

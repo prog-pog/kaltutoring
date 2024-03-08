@@ -1,11 +1,18 @@
-from os import system, name
+import json
 
 
-def clear():
-    if name == 'nt':
-        system('cls')
-    else:
-        system('clear')
+def save(dice):
+    data = json.dumps(dice.__dict__, indent=4)
+    with open("save.json", "w") as file:
+        file.flush()
+        file.write(data)
+    file.close()
 
-def start():
-    money = 0
+def load():
+    try:
+        with open("save.json", "r") as file:
+            data = file.read()
+        file.close()
+        print(data)
+    except FileNotFoundError:
+        exit()
