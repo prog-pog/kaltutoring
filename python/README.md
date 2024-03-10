@@ -1,7 +1,10 @@
-<div align="center>
+<div align="center">
 
 # My python Projects
 
-![Python IDE image](python.png)
-
 </div>
+
+## Dice Game
+
+- [x] Add delight to the experience when all tasks are complete :tada:
+- [ ] nothing
