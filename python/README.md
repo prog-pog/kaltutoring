@@ -1,10 +1,9 @@
 <div align="center">
 
 # My python Projects
+![Static Badge](https://img.shields.io/badge/diceGame-passing-green?logo=github)
+![Static Badge](https://img.shields.io/badge/diceGame-passing-green?logo=github)
 
 </div>
 
 ## Dice Game
-
-- [x] Add delight to the experience when all tasks are complete :tada:
-- [ ] nothing
