@@ -8,10 +8,7 @@
 
 ## Dice Game
 
-![Static Badge](https://img.shields.io/badge/diceGame_build-_-green?logo=github)
-![Static Badge](https://img.shields.io/badge/python-3.10.13-blue?logo=python)
+<div align="center">
 
-
-```
-python python/diceGames/main.py
-```
+![Static Badge](https://img.shields.io/badge/diceGame_build-_-green?logo=github) ![Static Badge](https://img.shields.io/badge/python-3.10.13-blue?logo=python)
+</div>
