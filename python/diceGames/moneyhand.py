@@ -32,8 +32,25 @@ def load():
             data = base64.b64encode(data)
             data = base64.b85encode(data)
             data = base64.b64encode(data)
+            data = data.decode()
             file.write(data)
         file.close()
+        pass
+    except json.decoder.JSONDecodeError:
+        with open("python/diceGames/save.txt", "r") as file:
+            if file.read() == "":
+                fil = open("python/diceGames/save.txt", "w")
+                data = {"delay": 20, "mult": 1, "sides": 2, "money": 0}
+                data = json.dumps(data)
+                data = data.encode()
+                data = base64.b64encode(data)
+                data = base64.b85encode(data)
+                data = base64.b64encode(data)
+                data = data.decode()
+                fil.write(data)
+                fil.close()
+            file.close()
+        exit("File empty, replaced with starting file, Please run main.py again.")
     except:
-        raise
+        exit("Unknown Error, Possible data corruption. If this persists please delete save.txt")
     return data

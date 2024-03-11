@@ -10,16 +10,16 @@
 
 <div align="center">
 
-[![diceGame Test](https://img.shields.io/badge/Latest_test-no_recent_tests-red?logo=python&labelColor=black)](https://github.com/prog-pog/kaltutoring/tree/c59cda11f197b7eab00a0dfbf2a49ff654c9dd5d/python/diceGames) ![Static Badge](https://img.shields.io/badge/Python_Version-v3.10.13-blue?logo=python&labelColor=black)
+[![diceGame Test](https://img.shields.io/badge/Latest_test-passed--any_python_IDE-python?logo=testcafe&labelColor=black)](https://github.com/prog-pog/kaltutoring/tree/c59cda11f197b7eab00a0dfbf2a49ff654c9dd5d/python/diceGames) ![Static Badge](https://img.shields.io/badge/Python_Version-v3.10.13-blue?logo=python&labelColor=black)
 
 </div>
 
 - [x] Working with download
-    - [x] rebase with main
-    - [x] Test on beta branch
-    - [x] Configure on beta branch
+    - [x] rebased with main
+    - [x] Tested on beta branch
+    - [x] Configured on beta branch
 - [x] Create a save system
-    - [ ] \(optional) Encoding system
+    - [x] \(optional) Encoding system
     - [x] Fundamentals
-- [x] Main concept
-    - [x] not have a skill issue
+        - [x] save to a file
+        - [x] read and write on file

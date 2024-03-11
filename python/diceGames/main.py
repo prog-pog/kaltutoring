@@ -7,7 +7,10 @@ def main():
 
 
     data = mh.load()
-    money = data["money"]
+    try:
+        money = data["money"]
+    except:
+        exit("Please run main.py again.")
     dice.clear()
     q = dice.Dice()
     q.settings(data["delay"], data["mult"])
