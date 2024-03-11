@@ -6,7 +6,7 @@ def save(dice):
     data = json.dumps(dice)
     data = data.encode()
     data = base64.b64encode(data)
-    with open("python/diceGames/save.json", "w") as file:
+    with open("python/diceGames/save.txt", "w") as file:
         file.flush()
         data = data.decode()
         file.write(data)
@@ -14,7 +14,7 @@ def save(dice):
 
 def load():
     try:
-        with open("python/diceGames/save.json", "r") as file:
+        with open("python/diceGames/save.txt", "r") as file:
             data = base64.b64decode(file.read())
             print(data)
             data = data.decode()
@@ -23,7 +23,7 @@ def load():
             print(type(data))
         file.close()
     except FileNotFoundError:
-        with open("python/diceGames/save.json", "w") as file:
+        with open("python/diceGames/save.txt", "w") as file:
             file.flush()
             data = {"delay": 20, "mult": 1, "sides": 2, "money": 0}
             data = json.dumps(data)
