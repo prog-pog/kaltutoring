@@ -10,11 +10,12 @@
 
 <div align="center">
 
-[![Static Badge](https://img.shields.io/badge/diceGame-Latest_test-green?logo=python&labelColor=black)](https://github.com/prog-pog/kaltutoring/tree/c59cda11f197b7eab00a0dfbf2a49ff654c9dd5d/python/diceGames) ![Static Badge](https://img.shields.io/badge/Python_Version-v3.10.13-blue?logo=python&labelColor=black)
+[![diceGame Test](https://img.shields.io/badge/Latest_test-no_recent_tests-red?logo=python&labelColor=black)](https://github.com/prog-pog/kaltutoring/tree/c59cda11f197b7eab00a0dfbf2a49ff654c9dd5d/python/diceGames) ![Static Badge](https://img.shields.io/badge/Python_Version-v3.10.13-blue?logo=python&labelColor=black)
 
 </div>
 
-- [ ] Run build test \(plz help me, i cant set it up)
+- [x] Working with download
+    - [x] rebase with main
     - [x] Test on beta branch
     - [x] Configure on beta branch
 - [x] Create a save system
