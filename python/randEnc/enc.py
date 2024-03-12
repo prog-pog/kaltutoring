@@ -19,4 +19,5 @@ for i in range(amm):
         text = base64.b64encode(text)
 save = json.dumps(ch)
 saveto.write(save)
+saveto.write("\n")
 saveto.write(text.decode())
