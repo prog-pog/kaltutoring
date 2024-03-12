@@ -1,11 +1,8 @@
 import moneyhand as mh
+import dice
 
 
 def main():
-    import dice
-    import moneyhand as mh
-
-
     data = mh.load()
     try:
         money = data["money"]
@@ -42,7 +39,8 @@ if __name__ == "__main__":
                 else:
                     pass
             if c.capitalize() == "E":
-                exit("")
+                dice.clear()
+                exit()
             else: pass
         except KeyboardInterrupt:
-            exit("\nOk, you ended it")
+            exit("moneyhand.Error: KeyboardInterrupt\nPlease dont press [CTRL+C], that is an exit code and could corrupt your data.")

@@ -1,10 +1,11 @@
 import json
 import base64
+import binascii
 
 
 def save(dice):
     data = json.dumps(dice)
-    data = data.encode()
+    data = binascii.hexlify(data.encode())
     data = base64.b64encode(data)
     data = base64.b85encode(data)
     data = base64.b64encode(data)
@@ -20,16 +21,15 @@ def load():
             data = base64.b64decode(file.read())
             data = base64.b85decode(data)
             data = base64.b64decode(data)
-            data = data.decode()
-            data = json.loads(data)
-            input()
+            data = binascii.unhexlify(data)
+            data = json.loads(data.decode())
         file.close()
     except FileNotFoundError:
         with open("python/diceGames/save.txt", "w") as file:
             file.flush()
             data = {"delay": 20, "mult": 1, "sides": 2, "money": 0}
             data = json.dumps(data)
-            data = data.encode()
+            data = binascii.hexlify(data.encode())
             data = base64.b64encode(data)
             data = base64.b85encode(data)
             data = base64.b64encode(data)
@@ -43,7 +43,7 @@ def load():
                 fil = open("python/diceGames/save.txt", "w")
                 data = {"delay": 20, "mult": 1, "sides": 2, "money": 0}
                 data = json.dumps(data)
-                data = data.encode()
+                data = binascii.hexlify(data.encode())
                 data = base64.b64encode(data)
                 data = base64.b85encode(data)
                 data = base64.b64encode(data)
