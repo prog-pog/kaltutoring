@@ -2,9 +2,10 @@ import base64
 import json
 
 
-def e():
+try:
     readFrom = open("python/randEnc/text.txt", "r")
     s1 = readFrom.readlines()
+    print(s1)
     save = json.loads(s1[0].encode())
     text = s1[1].encode()
     for i in range(len(save)):
@@ -13,4 +14,6 @@ def e():
         else:
             text = base64.b64decode(text)
     text = json.dumps(text.decode())
-    return text
+    print(text)
+except:
+    raise
