@@ -10,7 +10,7 @@ def main():
     try:
         money = data["money"]
     except:
-        exit("Please run main.py again.")
+        exit("Please run this python file again.")
     dice.clear()
     q = dice.Dice()
     q.settings(data["delay"], data["mult"])
