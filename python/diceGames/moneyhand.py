@@ -22,6 +22,7 @@ def load():
             data = base64.b64decode(data)
             data = data.decode()
             data = json.loads(data)
+            input()
         file.close()
     except FileNotFoundError:
         with open("python/diceGames/save.txt", "w") as file:
@@ -51,6 +52,8 @@ def load():
                 fil.close()
             file.close()
         exit("File empty, replaced with starting file, Please run main.py again.")
+    except KeyboardInterrupt:
+        exit("moneyhand.Error: KeyboardInterrupt\nPlease dont press [CTRL+C], that is an exit code and could corrupt your data.")
     except:
         exit("Unknown Error, Possible data corruption. If this persists please delete save.txt")
     return data
