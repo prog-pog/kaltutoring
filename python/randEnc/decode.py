@@ -3,7 +3,7 @@ import json
 
 
 try:
-    readFrom = open("python/randEnc/text.txt", "r")
+    readFrom = open("python/randEnc/file.txt", "r")
     s1 = readFrom.readlines()
     txt = base64.b32decode(str(s1[0]).encode())
     save = json.loads(txt.encode())

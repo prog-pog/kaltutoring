@@ -4,7 +4,7 @@ import json
 
 
 ch = []
-saveto = open("python/randEnc/text.txt", "w")
+saveto = open("python/randEnc/file.txt", "w")
 saveto.flush()
 amm = random.randint(2, 4)
 text = input("What do you want to secure?\n")
